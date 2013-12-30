@@ -1,46 +1,25 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: An Unremarkable TechBlog
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+## About Susan Tan
+I am a software engineer at Flixster with Rotten Tomatoes, where I work on the web application layer. I program in Python, Javascript, and Java. I live
+and work in the great technology city of San Francisco, CA. I have previously lived in the glorious city known as New York City. I graduated from
+a small liberal arts-engneering college in sunny Southern California.
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+On the open-source side, so as to incorporate more of the joys of Python in my life, I contribute to large Python projects, including Open Hatch, Django, and
+the IPython notebook.
 
-## Update Author Attributes
+I can be found @ArcTanSusan on Twitter and on IRC. My email is susan.tan.fleckerl@gmail.com.
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+## About This Blog
+This blog contains technical post-it notes, insights, and observations of a software engineer in Silicon Valley.
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
+## Past Blog Posts
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
-
