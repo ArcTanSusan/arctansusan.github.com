@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How to Install CTags Plugin In Sublime Text</title>
+    <meta name="description" content="">
+    <meta name="author" content="Susan Tan">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Jekyll Bootstrap</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>How to Install CTags Plugin In Sublime Text </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>29 December 2013</span>
+    </div>
+    <div class="content">
+      <p>If you&#8217;re working on a codebase that has more than a hundred lines of code, you should find tools that help you navigate large codebases. There&#8217;s the global search function on every text editor. That can be useful for looking up text in the code.</p>
+
+<p>An even better tool is to get inside the initial function declarations. So, I use Sublime Text with CTags installed. CTags will make working in a very large codebase a lot easier. It allows you to see where function definitions are. It&#8217;s an essential tool if you&#8217;re using Sublime Text.</p>
+
+<p>Install CTags using the Sublime’s package installer. To install CTag, type SHIFT+COMMAND+P and then “install package” in the pop-up search bar. A pop-up menu should appear and you can type in “Ctags”. Press enter to install CTags plugin. Now you have the Sublime package CTags installed.</p>
+
+<p>In your command terminal, <code>cd</code> into your current project, and now type the following to generate ctags, which are <code>.tags</code>:</p>
+
+<p><code>ctags -R -f .tags</code></p>
+
+<p>If that above command produces an error message of the following:</p>
+
+<p><code>ctags: illegal option — R usage: ctags [-BFadtuwvx] [-f tags file] file …</code></p>
+
+<p>Then, do <code>brew install ctags</code> on the terminal, and type in the following:</p>
+
+<p><code>alias ctags=”`brew —prefix`/bin/ctags”</code></p>
+
+<p>The default key bindings should now work. See https://github.com/SublimeText/CTags for more information.</p>
+
+<p>For more help on installing CTags if you’re on a MacOX, see these blogs: http://gmarik.info/blog/2010/10/08/ctags-on-OSX http://mattpolito.info/post/1648956809/ctags-got-you-down</p>
+    </div>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#-ref">
+    		 <span>9</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/tags.html#sublime text-ref">sublime text <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#ctags-ref">ctags <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2013/12/29/how-to-apply-a-patch-attached-to-a-ticket-in-a-foss-project" title="How to apply a patch attached to a ticket in a FOSS project.">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/2013/12/29/installing-the-right-version-of-numpy" title="Installing the Right Version of Numpy">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2014 Susan Tan
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+
