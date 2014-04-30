@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "I'm joining Piston Cloud"
-description: ""
+description: "I have a new job! Yay!"
 category: ""
-tags: []
+tags: ["PistonCloud","python","new_job"]
 ---
 {% include JB/setup %}
 
@@ -21,4 +21,5 @@ I’m joining an engineering team of less than 25 engineers at this early-stage 
 I really love this team's culture. The employees literally do wear fancy hats at work. They show up at the Open Stack Global Summit in formal three-piece suits and cocktail dresses. They go to tea parties, tea tastings, and wine tastings together. Perfect culture fit.
 
 From,
+
 Susan Tan
