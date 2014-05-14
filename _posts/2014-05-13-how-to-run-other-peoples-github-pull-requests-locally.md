@@ -27,43 +27,39 @@ Github Support guide was written for the project leaders in mind, rather than fo
 the upstream repo. In the article, the "origin" actually refers to the upstream master repository. So, if you have a fork
 of an upstream repo, what do you need to do for your git configuration setup? Below are my step-by-step modifications:
 
+
 Modifying your Git Configuration
 =====================
 
-Open your `.git/config` file in your editor and locate the section for your GitHub remote. It should look something like this:
+Open your `.git/config` file in your editor and locate the section for your GitHub upstream remote. It should look something like this:
 
-```
-[remote "upstream"]
-    url = https://github.com/openhatch/oh-mainline.git
-    fetch = +refs/heads/*:refs/remotes/upstream/*
-```
+    [remote "upstream"]
+        url = https://github.com/openhatch/oh-mainline.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
 
 We're going to add an extra line to this section so that it now looks like this:
 
-[remote "upstream"]
-    url = https://github.com/openhatch/oh-mainline.git
-    fetch = +refs/heads/*:refs/remotes/upstream/*
-    fetch = +refs/pull/*/head:refs/pull/upstream/*
+    [remote "upstream"]
+        url = https://github.com/openhatch/oh-mainline.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+        fetch = +refs/pull/*/head:refs/pull/upstream/*
 
 We told Git that we would like to fetch remote references of the upstream repo that match the pattern `refs/pull/*/head` and write them
 as local references that match the pattern `refs/pull/origin/*`.
 
 Now we can fetch all the pull requests from the upstream repo:
 
-```
-git fetch upstream
-```
+    git fetch upstream
 
-You'll get a massive stream of pull requests that are now rewritten locally in the format of `refs/pull/upstream/<PR_number>`.
+Depending on the number of pull requests, you'll get a stream of info in your terminal about pull requests that are now rewritten locally
+in the format of `refs/pull/upstream/<PR_number>`, which is what you've specified in the git config.
+
 
 Checking out a particular pull request
 =========================
 
 You should now be able to check out a pull request in your local repo as follows:
 
-```
-git checkout -b 999 pull/upstream/999
-```
+    git checkout -b 999 pull/upstream/999
 
 Now you can test this person's branch by running a local server or running a test suite to make sure all the tests pass.
-
