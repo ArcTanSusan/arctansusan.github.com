@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>How to apply a patch attached to a ticket in a FOSS project.</title>
-    <meta name="description" content="">
+    <title>How to run other people's Github pull requests locally</title>
+    <meta name="description" content="In an open source world far far away, a contributor makes a pull request on the upstream master repo of a project. You're a core committer or collaborator with your own fork of the upstream repo. How do you run this new pull request locally? This is a short guide on how to check out pull requests locally and painlessly.">
     <meta name="author" content="Susan Tan">
 
     <!-- Enable responsive viewport -->
@@ -126,52 +126,72 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>How to apply a patch attached to a ticket in a FOSS project. </h1>
+  <h1>How to run other people's Github pull requests locally </h1>
 </div>
 
 <div class="row-fluid post-full">
   <div class="span12">
     <div class="date">
-      <span>29 December 2013</span>
+      <span>13 May 2014</span>
     </div>
     <div class="content">
       
-<p>Sometimes, contributors to an open-source project are kind enough to attach patches to a ticket.
-You’re working on a ticket that already contains a patch, which is a diff of the development branch against the upstream master branch.</p>
+<p>I was very recently made a core committer to the open source OpenHatch.org Django website. Since Spring 2013, I&rsquo;ve been contributing
+code to OpenHatch.org, mostly on the UI/UX side and in some amounts of Python. One of the responsibilites as a core committer is that
+I get to review the code of other contributors and when appropriate, approve their pull requests to be merged into the upstream repository.
+I have full push access to the code repository.</p>
 
-<p>What do you do with the tickets that already have patches attached to them? As part of the regular workflow, you create a new git branch, usually named after the ticket name, before you start working on that development branch. After you have your new local git branch, the next step is to apply the existing patch(es). Here’s one workflow of how to apply a patch:</p>
+<p>This article is about how to go about checking out someone else&rsquo;s pull request locally. This is an epecially useful skill regardless of whether
+or not you have push access to the upstream repository. Reading and reviewing other people&rsquo;s code is a common and helpful thing to do
+in software development.</p>
 
-<p>Steps to take when applying a patch:
-1. Create an empty .patch file.</p>
+<p>Github Support wrote <a href="https://help.github.com/articles/checking-out-pull-requests-locally">this excellent guide</a> on how to check out
+pull requests locally. Read through this Github article carefully before proceeding with the rest of this post.</p>
 
-<p><code>
-» Touch file.patch
-</code></p>
+<p>First of all, what is a pull request? In the Github world, a pull requests is a technically a branch from someone else&rsquo;s fork of the upstream
+repository and the branch represents one or more commits that the contributor wants to merge into the upstream repository. The
+Github Support guide was written for the project leaders in mind, rather than for the contributor-who-was-granted-push-access to
+the upstream repo. In the article, the &ldquo;origin&rdquo; actually refers to the upstream master repository. So, if you have a fork
+of an upstream repo, what do you need to do for your git configuration setup? Below are my step-by-step modifications:</p>
 
-<ol>
-  <li>Download the patch directly from the url link into that empty patch file you’ve created. I’m usong a django patch as an example.</li>
-</ol>
+<h1 id="modifying-your-git-configuration">Modifying your Git Configuration</h1>
 
-<p><code>
-» curl https://code.djangoproject.com/raw-attachment/ticket/99999/my_patch.diff &gt; file.patch
-</code></p>
-
-<ol>
-  <li>cd into the directory where the patch refers to. Use git to apply the patch.</li>
-</ol>
+<p>Open your <code>.git/config</code> file in your editor and locate the section for your GitHub remote. It should look something like this:</p>
 
 <p><code>
-» git am file.patch.
+[remote "upstream"]
+    url = https://github.com/openhatch/oh-mainline.git
+    fetch = +refs/heads/*:refs/remotes/upstream/*
 </code></p>
 
-<p>See this guide for additional reference: http://ariejan.net/2009/10/26/how-to-create-and-apply-a-patch-with-git/</p>
+<p>We&rsquo;re going to add an extra line to this section so that it now looks like this:</p>
 
-<p>Did you get any errors when you run that above command? If not, then you have now successfully applied an existing patch.</p>
+<p>[remote &ldquo;upstream&rdquo;]
+    url = https://github.com/openhatch/oh-mainline.git
+    fetch = +refs/heads/<em>:refs/remotes/upstream/</em>
+    fetch = +refs/pull/<em>/head:refs/pull/upstream/</em></p>
 
-<p>There’s a chance that the patch may not apply 100% correctly. Sadly, that means you’ll have to manually apply those patches. This unfortunate situation
-is usually true for very old patches. Then, git gets confused on which line numbers to apply the patches to. That is especially true when the upstream master
-codebase has been dramatically updated or if the pach has aged considerably. As a result, there may be hunks that do not get applied cleanly into the
-existing codebase.</p>
+<p>We told Git that we would like to fetch remote references of the upstream repo that match the pattern <code>refs/pull/*/head</code> and write them
+as local references that match the pattern <code>refs/pull/origin/*</code>.</p>
+
+<p>Now we can fetch all the pull requests from the upstream repo:</p>
+
+<p><code>
+git fetch upstream
+</code></p>
+
+<p>You&rsquo;ll get a massive stream of pull requests that are now rewritten locally in the format of <code>refs/pull/upstream/&lt;PR_number&gt;</code>.</p>
+
+<h1 id="checking-out-a-particular-pull-request">Checking out a particular pull request</h1>
+
+<p>You should now be able to check out a pull request in your local repo as follows:</p>
+
+<p><code>
+git checkout -b 999 pull/upstream/999
+</code></p>
+
+<p>Now you can test this person&rsquo;s branch by running a local server or running a test suite to make sure all the tests pass.</p>
+
 
     </div>
 
@@ -184,8 +204,8 @@ existing codebase.</p>
 
   
      
-    	<li><a href="/categories.html#-ref">
-    		 <span>10</span>
+    	<li><a href="/categories.html#git, github, pull requests, workflow, process-ref">
+    		git, github, pull requests, workflow, process <span>1</span>
     	</a></li>
     
   
@@ -205,7 +225,7 @@ existing codebase.</p>
      
     	<li><a href="/tags.html#git-ref">git <span>3</span></a></li>
      
-    	<li><a href="/tags.html#open source-ref">open source <span>1</span></a></li>
+    	<li><a href="/tags.html#github-ref">github <span>1</span></a></li>
     
   
 
@@ -218,11 +238,11 @@ existing codebase.</p>
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/2013/12/29/annoying-small-fact-about-jsp-syntax" title="Annoying Small Fact about JSP Syntax">&larr; Previous</a></li>
+        <li class="prev"><a href="/2014/04/30/im-joining-piston-cloud" title="I'm joining Piston Cloud">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/2013/12/29/how-to-install-ctags-plugin-in-sublime-text-2" title="How to Install CTags Plugin In Sublime Text">Next &rarr;</a></li>
+        <li class="next disabled"><a>Next &rarr;</a>
       
       </ul>
     </div>

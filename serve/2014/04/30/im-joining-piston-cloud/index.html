@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>How to apply a patch attached to a ticket in a FOSS project.</title>
-    <meta name="description" content="">
+    <title>I'm joining Piston Cloud</title>
+    <meta name="description" content="I have a new job! Yay!">
     <meta name="author" content="Susan Tan">
 
     <!-- Enable responsive viewport -->
@@ -126,52 +126,29 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>How to apply a patch attached to a ticket in a FOSS project. </h1>
+  <h1>I'm joining Piston Cloud </h1>
 </div>
 
 <div class="row-fluid post-full">
   <div class="span12">
     <div class="date">
-      <span>29 December 2013</span>
+      <span>30 April 2014</span>
     </div>
     <div class="content">
       
-<p>Sometimes, contributors to an open-source project are kind enough to attach patches to a ticket.
-You’re working on a ticket that already contains a patch, which is a diff of the development branch against the upstream master branch.</p>
+<p>Dear Readers,</p>
 
-<p>What do you do with the tickets that already have patches attached to them? As part of the regular workflow, you create a new git branch, usually named after the ticket name, before you start working on that development branch. After you have your new local git branch, the next step is to apply the existing patch(es). Here’s one workflow of how to apply a patch:</p>
+<p>As you know, I left my former Java web engineer job at Flixster &amp; Rotten Tomatoes on April 7, 2014 in pursuit of a job in the language that I’m in love with — <strong>Python</strong>.</p>
 
-<p>Steps to take when applying a patch:
-1. Create an empty .patch file.</p>
+<p>Today I’m happy to announce that I’m joining the backend engineering team at <a href="http://www.pistoncloud.com/press-releases/piston-named-one-of-the-top-10-best-places-to-work-in-the-san-francisco-bay-area/"><strong>Piston Cloud</strong></a> in San Francisco. I’ll be working on a private cloud-compute system built underneath Open Stack. This technology is pushing the boundaries of what is possible with distributed systems engineering and scalable VMs. The backend system is 100% in Python, of course. I will be a Django backend engineer, a distributed systems engineer, and a front-end Javascript engineer. I’ll start off in the first role as a backend engineer, working on the Django web application, and eventually in the long-term, I will occupy all three roles and wear many fancy hats. Exciting! I’ll learn a ton in the process. Occasionally, I’m expected to contribute back to Open Stack, so there will be even more Python open source in my life.</p>
 
-<p><code>
-» Touch file.patch
-</code></p>
+<p>I’m joining an engineering team of less than 25 engineers at this early-stage cloudy startup. Accumulatively, this team has a grant total of 200 years of experience in software engineering, architecture, management, and cloud computing systems. In fact, the co-founders and senior management of this company are the original early engineers of Open Stack itself back when it was an experimental research project that grew from R+D at NASA. A number of the engineering managers also happen to be PSF board members.</p>
 
-<ol>
-  <li>Download the patch directly from the url link into that empty patch file you’ve created. I’m usong a django patch as an example.</li>
-</ol>
+<p>I really love this team’s culture. The employees literally do wear fancy hats at work. They show up at the Open Stack Global Summit in formal three-piece suits and cocktail dresses. They go to tea parties, tea tastings, and wine tastings together. Perfect culture fit.</p>
 
-<p><code>
-» curl https://code.djangoproject.com/raw-attachment/ticket/99999/my_patch.diff &gt; file.patch
-</code></p>
+<p>From,</p>
 
-<ol>
-  <li>cd into the directory where the patch refers to. Use git to apply the patch.</li>
-</ol>
-
-<p><code>
-» git am file.patch.
-</code></p>
-
-<p>See this guide for additional reference: http://ariejan.net/2009/10/26/how-to-create-and-apply-a-patch-with-git/</p>
-
-<p>Did you get any errors when you run that above command? If not, then you have now successfully applied an existing patch.</p>
-
-<p>There’s a chance that the patch may not apply 100% correctly. Sadly, that means you’ll have to manually apply those patches. This unfortunate situation
-is usually true for very old patches. Then, git gets confused on which line numbers to apply the patches to. That is especially true when the upstream master
-codebase has been dramatically updated or if the pach has aged considerably. As a result, there may be hunks that do not get applied cleanly into the
-existing codebase.</p>
+<p>Susan Tan</p>
 
     </div>
 
@@ -203,9 +180,11 @@ existing codebase.</p>
 
   
      
-    	<li><a href="/tags.html#git-ref">git <span>3</span></a></li>
+    	<li><a href="/tags.html#PistonCloud-ref">PistonCloud <span>1</span></a></li>
      
-    	<li><a href="/tags.html#open source-ref">open source <span>1</span></a></li>
+    	<li><a href="/tags.html#python-ref">python <span>2</span></a></li>
+     
+    	<li><a href="/tags.html#new_job-ref">new_job <span>1</span></a></li>
     
   
 
@@ -218,11 +197,11 @@ existing codebase.</p>
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/2013/12/29/annoying-small-fact-about-jsp-syntax" title="Annoying Small Fact about JSP Syntax">&larr; Previous</a></li>
+        <li class="prev"><a href="/2013/12/29/useful-git-tips-from-a-frequent-git-user" title="Useful Git Tips From a Frequent Git User">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/2013/12/29/how-to-install-ctags-plugin-in-sublime-text-2" title="How to Install CTags Plugin In Sublime Text">Next &rarr;</a></li>
+        <li class="next"><a href="/git,%20github,%20pull%20requests,%20workflow,%20process/2014/05/13/how-to-run-other-peoples-github-pull-requests-locally" title="How to run other people's Github pull requests locally">Next &rarr;</a></li>
       
       </ul>
     </div>

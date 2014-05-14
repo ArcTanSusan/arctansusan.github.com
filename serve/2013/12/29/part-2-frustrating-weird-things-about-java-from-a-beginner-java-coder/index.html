@@ -59,6 +59,30 @@
   
     
       
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
     
   
     
@@ -111,21 +135,16 @@
       <span>29 December 2013</span>
     </div>
     <div class="content">
-      <p>The learning and frustration continues as I learn more beginner Java this week. I come from a Python background, a high-level dynamic language that had OO features implemented as an after-thought. The road to learning the OO language Java has been not quite as easy as it should be. This blog post as well as the previous one details some of those pain points in my learning process.</p>
+      
+<p>The learning and frustration continues as I learn more beginner Java this week. I come from a Python background, a high-level dynamic language that had OO features implemented as an after-thought. The road to learning the OO language Java has been not quite as easy as it should be. This blog post as well as the previous one details some of those pain points in my learning process.</p>
 
-<p>I learned some interesting facts about Java:</p>
-
-<ul>
-<li>Every object inherits from the Object class, which contains in-built methods such as clone(), equals(), finalize(),hasCode(), toString().</li>
-
-<li>Java has in-built decorators such as @Override, which is a shortcut for over-ride a method from a parent class. You should not override variables, but instead override methods.</li>
-
-<li>Learning interfaces at Java: packages and how to import them, how to make worldwide unique package names.</li>
-
-<li>The differences between the abstract class inheritance vs. the interface class inheritance and in what cases you should use each. Abstract class inheritance for specifying NATURE of the object, while interface class inheritance is for specifying CAPABILITY of object. Many stackoverflow discussions have been written just on this topic itself.</li>
-
-<li>The eternal pains of Comparison Equality. The “==” doesn’t work like it should work in Java. But, NO, it does not! Instead, we have to use the “equals” method. So I tried that to compare two perfectly identical new objects with the same attributes. The result was stilll False. GAH. Lastly, what ultimately worked was to use the hashCode and equala() generator in Java creates @Override decorator function. Subsequently, this mess of code is automatically created for me after right-clicking Source —&gt;Generate hashCode and Equals():</li>
-</ul>
+<p>I learned some interesting facts about Java:
+* Every object inherits from the Object class, which contains in-built methods such as clone(), equals(), finalize(),hasCode(), toString().
+* Java has in-built decorators such as @Override, which is a shortcut for over-ride a method from a parent class. You should not override variables, but instead override methods.
+* Learning interfaces at Java: packages and how to import them, how to make worldwide unique package names.
+* The differences between the abstract class inheritance vs. the interface class inheritance and in what cases you should use each. Abstract class inheritance for specifying NATURE of the object, while interface class inheritance is for specifying CAPABILITY of object. Many stackoverflow discussions have been written just on this topic itself.
+* The eternal pains of Comparison Equality.
+    The “==” doesn’t  work like it should work in Java. But, NO, it does not! Instead, we have to use the “equals” method. So I tried that to compare two perfectly identical new objects with the same attributes. The result was stilll False. GAH. Lastly, what ultimately worked was to use the hashCode and equala() generator in Java creates @Override decorator function. Subsequently, this mess of code is automatically created for me after right-clicking Source —&gt;Generate hashCode and Equals():</p>
 
 <p><code>
 @Override
@@ -149,8 +168,8 @@
 All that just to compare two objects to see if they are the same. Then, I use the equals method in a class called “App’, just like before:
 public class App {
     public static void main(String[] args) {
-        Person person1 = new Person(8 ,&quot;Bob&quot;);
-        Person person2 = new Person(8,&quot;Bob&quot;);
+        Person person1 = new Person(8 ,"Bob");
+        Person person2 = new Person(8,"Bob");
         System.out.println(person1.equals(person2));
     }
 }
@@ -173,6 +192,7 @@ The “==” works fine for comparing two integers, but it doesn’t work for do
 <p>Then, the world is turned upside-down again when you try to compare two identical strings using “==”. Gah.</p>
 
 <p>More frustrations to follow in Part 3.</p>
+
     </div>
 
   
@@ -185,7 +205,7 @@ The “==” works fine for comparing two integers, but it doesn’t work for do
   
      
     	<li><a href="/categories.html#-ref">
-    		 <span>9</span>
+    		 <span>10</span>
     	</a></li>
     
   
@@ -205,7 +225,7 @@ The “==” works fine for comparing two integers, but it doesn’t work for do
      
     	<li><a href="/tags.html#java-ref">java <span>3</span></a></li>
      
-    	<li><a href="/tags.html#beginner-ref">beginner <span>3</span></a></li>
+    	<li><a href="/tags.html#beginner-ref">beginner <span>4</span></a></li>
     
   
 

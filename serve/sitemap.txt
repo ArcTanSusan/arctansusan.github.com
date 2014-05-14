@@ -1,11 +1,27 @@
 
-http://username.github.io/archive.html
-http://username.github.io/atom.xml
-http://username.github.io/categories.html
-http://username.github.io/index.html
-http://username.github.io/pages.html
-http://username.github.io/rss.xml
-http://username.github.io/sitemap.txt
-http://username.github.io/tags.html
+http://onceuponatimeforever.github.io/archive.html
+http://onceuponatimeforever.github.io/atom.xml
+http://onceuponatimeforever.github.io/categories.html
+http://onceuponatimeforever.github.io/How to run other people's Github pull requests locally/index.html
+http://onceuponatimeforever.github.io/index.html
+http://onceuponatimeforever.github.io/Joining_Piston_Cloud.html
+http://onceuponatimeforever.github.io/pages.html
+http://onceuponatimeforever.github.io/Part 1: Frustrating Weird Things About Java From a Beginner Java Coder/index.html
+http://onceuponatimeforever.github.io/Part 2: Frustrating Weird Things About Java From a Beginner Java Coder/index.html
+http://onceuponatimeforever.github.io/Part 3: Frustrating Weird Things About Java From a Beginner Java Coder/index.html
+http://onceuponatimeforever.github.io/rss.xml
+http://onceuponatimeforever.github.io/sitemap.txt
+http://onceuponatimeforever.github.io/tags.html
 
-http://username.github.io/lessons/2011/12/29/jekyll-introduction
+http://onceuponatimeforever.github.io/git,%20github,%20pull%20requests,%20workflow,%20process/2014/05/13/how-to-run-other-peoples-github-pull-requests-locally
+http://onceuponatimeforever.github.io/2014/04/30/im-joining-piston-cloud
+http://onceuponatimeforever.github.io/2013/12/29/useful-git-tips-from-a-frequent-git-user
+http://onceuponatimeforever.github.io/2013/12/29/part-3-frustrating-weird-things-about-java-from-a-beginner-java-coder
+http://onceuponatimeforever.github.io/2013/12/29/part-2-frustrating-weird-things-about-java-from-a-beginner-java-coder
+http://onceuponatimeforever.github.io/2013/12/29/part-1-frustrating-weird-things-about-java-from-a-beginner-java-coder
+http://onceuponatimeforever.github.io/2013/12/29/installing-the-right-version-of-numpy
+http://onceuponatimeforever.github.io/2013/12/29/how-to-install-ctags-plugin-in-sublime-text-2
+http://onceuponatimeforever.github.io/2013/12/29/how-to-apply-a-patch-attached-to-a-ticket-in-a-foss-project
+http://onceuponatimeforever.github.io/2013/12/29/annoying-small-fact-about-jsp-syntax
+http://onceuponatimeforever.github.io/2013/12/29/-bash-command-not-found
+http://onceuponatimeforever.github.io/lessons/2011/12/29/jekyll-introduction

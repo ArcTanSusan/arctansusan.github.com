@@ -59,6 +59,30 @@
   
     
       
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
     
   
     
@@ -111,27 +135,33 @@
       <span>29 December 2013</span>
     </div>
     <div class="content">
-      <p>I’m currently learning Java at work. Going from a language like Python to a pure object-oriented langage like Java has been quite an adjustment to a different mode of thinking and coding. Java has a lot of quirks. Along my learning journey, I’m getting familiar with Eclipse shortcuts.</p>
+      
+<p>I’m currently learning Java at work. Going from a language like Python to a pure object-oriented langage like Java has been quite an adjustment to a different mode of thinking and coding. Java has a lot of quirks. Along my learning journey, I’m getting familiar with Eclipse shortcuts.</p>
 
-<p>Here’s a summary of some strange aspects of Java that I’ve learned this week:<br />&#8220;this&#8221; in #Java can be both used when calling a variable and when calling a constructor. The call to the constuctor using &#8220;this&#8221; must be placed at the very beginning inside the class that which you’re calling the constructor from. The String is not 1 of the 8 native primitives. String is a class. New types of classes: public, private, etc. Strings are IMMUTABLE. What?! Let me demonstrate string builder and string formatting:</p>
+<p>Here’s a summary of some strange aspects of Java that I’ve learned this week:<br />
+“this” in #Java can be both used when calling a variable and when calling a constructor. The call to the constuctor using “this” must be placed at the very beginning inside the class that which you’re calling the constructor from.
+The String is not 1 of the 8 native primitives. String is a class. 
+New types of classes: public, private, etc.
+Strings are IMMUTABLE. What?! Let me demonstrate string builder and string formatting: </p>
 
 <p><code>java
 // String Builder and String Formatting
 // This is a VERY Inefficient program below.
 String info =””;
-info += &quot;My name is Bob.&quot;;
+info += "My name is Bob.";
 info += ””;
-info += &quot;I am a builder.&quot;;
+info += "I am a builder.";
 System.out.println(info);
 </code></p>
 
-<p>This above is a BAD program. The variable <code>info</code> is set to an empty string and will be an empty string for the rest of its life in the program. Then, we’re making an empty string. Then, every time we assign <code>info</code>, we’re actually making a whole new string. Therefore, we&#8217;re increasing space and using memory. Thus, we have String Builders. Here’s a revised re-write of the above program:</p>
+<p>This above is a BAD program. The variable <code>info</code> is set to an empty string and will be an empty string for the rest of its life in the program. Then, we’re making an empty string. Then, every time we assign <code>info</code>, we’re actually making a whole new string. Therefore, we’re increasing space and using memory.
+Thus, we have String Builders. Here’s a revised re-write of the above program:</p>
 
 <p><code>java
 StringBuilder sb = new StringBuilder(””);
-sb.append(&quot;My name is Sue.&quot;);
-sb.append(&quot; &quot;);
-sb.append(&quot;I am a lion tamer.&quot;);
+sb.append("My name is Sue.");
+sb.append(" ");
+sb.append("I am a lion tamer.");
 System.out.println(sb.toString());
 </code></p>
 
@@ -139,11 +169,12 @@ System.out.println(sb.toString());
 
 <p><code>java
 StringBuilder s = new StringBuilder();
-s.append(&quot;My name is Roger.&quot;).append(””).append(&quot;I am a sky diver.&quot;);
+s.append("My name is Roger.").append(””).append("I am a sky diver.");
 System.out.println(s.toString());
 </code></p>
 
-<p>That&#8217;s all for String Builders.</p>
+<p>That’s all for String Builders.</p>
+
     </div>
 
   
@@ -156,7 +187,7 @@ System.out.println(s.toString());
   
      
     	<li><a href="/categories.html#-ref">
-    		 <span>9</span>
+    		 <span>10</span>
     	</a></li>
     
   
@@ -176,7 +207,7 @@ System.out.println(s.toString());
      
     	<li><a href="/tags.html#java-ref">java <span>3</span></a></li>
      
-    	<li><a href="/tags.html#beginner-ref">beginner <span>3</span></a></li>
+    	<li><a href="/tags.html#beginner-ref">beginner <span>4</span></a></li>
     
   
 

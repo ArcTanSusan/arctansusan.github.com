@@ -59,6 +59,30 @@
   
     
       
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
     
   
     
@@ -111,17 +135,20 @@
       <span>29 December 2013</span>
     </div>
     <div class="content">
-      <p>When creating a new variable, I do the following:</p>
+      
+<p>When creating a new variable, I do the following:</p>
 
-<p><code>&lt;c:set var=&quot;isFromCC-Entry&quot; value=true /&gt;</code></p>
+<p><code>&lt;c:set var="isFromCC-Entry" value=true /&gt;</code></p>
 
-<p>JSP templating system doesn’t recognize the punctuation “-“. When I get the output of <code>${isFromCCEntry}</code>, I expect the output to be <code>true</code>, but however, I get the following printed error on the page: 0.</p>
+<p>JSP templating system doesn’t recognize the punctuation “-“. When I get the output of
+<code>${isFromCCEntry}</code>, I expect the output to be <code>true</code>, but however, I get the following printed error on the page:  0.</p>
 
 <p>The solution is to remove the dash “-“, like so:</p>
 
-<p><code>&lt;c:set var=&quot;isFromCCEntry&quot; value=true /&gt;</code></p>
+<p><code>&lt;c:set var="isFromCCEntry" value=true /&gt;</code></p>
 
 <p>This is a syntax problem in JSP templates.</p>
+
     </div>
 
   
@@ -134,7 +161,7 @@
   
      
     	<li><a href="/categories.html#-ref">
-    		 <span>9</span>
+    		 <span>10</span>
     	</a></li>
     
   
