@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Don Quixote Ballet Review"
+description: ""
+category: ""
+tags: []
+---
+{% include JB/setup %}
+
+
+A Ballet Review of *Don Quixote* by the SFBallet
+=====================================================
+
+SFBallet, under the artistic direction of Tommasson and Yuri, is the ballet company that is responsible for bringing Don Quixote to the world spotlight in 2003 after four decades of being forgotten in the dust of history. The last performance of Don Quixote prior to its 21st century revival was in the 1970s in the NYC Ballet. Don Quixote is a comic ballet that ends in the famous Kitri's wedding scene that includes a fandango, the most famous solos, and the 32 fouettés. It's not a psychological triller nor a romance-tragedy, there's no layers. The dances in DonQ are all simple joyous entertainment with its numerous group chroeography in the town sqaure, a tavern dance, even more group choreography with faeries in a dream forest, and finally, a wedding. The dancing in Don Quixotei is an over-the-top loud celebration of joy and of living in the moment.
+
+I have a short 1-sentence summary for tonight's opening performance: Well-executed technically demanding performances and stunningly beautiful costumes, but it was not outstanding. I've been to much memorable peformances that at the end of curtai call in which the entire audience is so moved by the performance and does an standing ovation. This was not one of them, sadly. It's a good above average Don Quixote with very excellent dancing.
+
+The principal dancers Mathilde Frousty and her partner Carlos Quenedit have played roles in Don Quixote multiple times previously. Their partnering is well-done. The group formations were also well-done -- precise and cleverly choreographed that the transitons between steps happened invisibly well. However, I didn't get a sense of audience connection between the two principals, they were doing impressive choreography but not reacting to  or performing for their audience. The comical acting scenes were hilarious, especially the fake death scene when Basilio pretends to stab himself. I don't get a sense of the depth behind the characters and I know not every story-based ballet needs to nor should have in-depth characterization. Executing choreography really well is far different from portraying a character well. This makes me wonder what the performance would've been like on any other evening of the show.
+
+I notice technical flaws if any exist and if a ballet-fangurl adult beginner like me can spot them, I assume that a professional ballet dancer in the audience can see a whole lot more of them. The technical flaws and what's missing in this performance compared to previous verisons can be glaringly obvious when you've seen a number of previous versions. Doing 32 fouettés is impressively diffiuclt and Frousty accomplishes this well. But she took half of the stage to complete all her turns. Most ballerinas at the top of their game stay in place when doing fouettés and the starting position is hardly 2 feet away from their ending poisition after the movement. I noticed when the jumps were a beat off from the music by accident, I notice the details when a corps de ballet dancer dropped her fan by accident for a few seconds.
+
+The costumes are dramatically colorful and make the atmosphere of a sunny day in Spain so tangible. Custome designer Martin Pakledinaz, who won Tony Awards for designing at various musicals, demonstrated a wide spectrum of historical custom from the artwork of the 17th century Spain. He was especially inspired from visiting the cities and couuntry sides of Spain. The breadth and variety of the customs were astrounding. There are lots of women in fluttery tiered dresses in a rainbow spectrum of colors with flowers in their hair and fans in their hands, lots of women in classical pancake tutus in the faerie's forest scene, and lots of even more women in black-and-white tiered dresses in the last act with the wedding scene. The wedding couple Kitri and Basilio are in an all-white finery with ornate gold details. The toreadors are strikingly colorful in their orange bolero jackets (yes, you CAN make orange look spectacular!) and knee pants in blue and black. In total there are ~220 [costumes](http://www.sfballetblog.org/2015/03/5-fun-facts-don-quixote), which is such an incredibly massive wardrobe to manage.
+
+All the Spanish-style orchestral music is stuck in my head now or in my earphones for the rest of the next several months. If you haven't seen Don Quixote, you're missing out. The show continues for the next week.
