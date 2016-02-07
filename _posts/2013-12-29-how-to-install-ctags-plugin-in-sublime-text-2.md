@@ -2,8 +2,7 @@
 layout: post
 title: "How to Install CTags Plugin In Sublime Text"
 description: ""
-category: ""
-tags: ["sublime text","ctags"]
+category: "ctags"
 ---
 {% include JB/setup %}
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Are .pyc files useless?"
 description: ""
-category: ""
+category: "python"
 tags: []
 ---
 {% include JB/setup %}

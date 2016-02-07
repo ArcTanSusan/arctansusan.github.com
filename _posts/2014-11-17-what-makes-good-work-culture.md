@@ -2,8 +2,7 @@
 layout: post
 title: "What Makes Good Work Culture?"
 description: ""
-category: ""
-tags: []
+category: "work culture"
 ---
 {% include JB/setup %}
 

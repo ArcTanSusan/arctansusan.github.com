@@ -4,8 +4,7 @@ title: "How to run other people's Github pull requests locally"
 description: "In an open source world far far away, a contributor makes a pull request on the upstream master repo of a project. You're
 a core committer or collaborator with your own fork of the upstream repo. How do you run this new pull request locally? This is a short guide
 on how to check out pull requests locally and painlessly."
-category: ""
-tags: ["git","github"]
+category: "git"
 ---
 {% include JB/setup %}
 

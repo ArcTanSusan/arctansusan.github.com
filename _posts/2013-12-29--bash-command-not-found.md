@@ -2,8 +2,7 @@
 layout: post
 title: "Command Not Found"
 description: ""
-category: ""
-tags: ["python path file"]
+category: "django"
 ---
 {% include JB/setup %}
 

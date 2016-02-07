@@ -2,8 +2,7 @@
 layout: post
 title: "Installing the Right Version of Numpy"
 description: ""
-category: ""
-tags: ["python", "numpy"]
+category: "python numpy"
 ---
 {% include JB/setup %}
 

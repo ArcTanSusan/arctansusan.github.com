@@ -2,8 +2,7 @@
 layout: post
 title: "I'm joining Piston Cloud"
 description: "I have a new job! Yay!"
-category: ""
-tags: ["PistonCloud","python","new_job"]
+category: "work culture"
 ---
 {% include JB/setup %}
 

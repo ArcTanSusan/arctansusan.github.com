@@ -2,8 +2,7 @@
 layout: post
 title: "How to apply a patch attached to a ticket in a FOSS project."
 description: ""
-category: ""
-tags: ["git","open source"]
+category: "foss"
 ---
 {% include JB/setup %}
 

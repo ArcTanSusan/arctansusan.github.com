@@ -2,8 +2,7 @@
 layout: post
 title: "Annoying Small Fact about JSP Syntax"
 description: ""
-category: ""
-tags: ["jsp"]
+category: "java"
 ---
 {% include JB/setup %}
 

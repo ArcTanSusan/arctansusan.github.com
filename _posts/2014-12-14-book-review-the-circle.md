@@ -3,7 +3,6 @@ layout: post
 title: "Book Review: The Circle"
 description: ""
 category: "books"
-tags: ["books"]
 ---
 {% include JB/setup %}
 

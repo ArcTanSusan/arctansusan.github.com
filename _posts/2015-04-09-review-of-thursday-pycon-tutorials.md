@@ -2,8 +2,7 @@
 layout: post
 title: "Review of Thursday PyCon Tutorials"
 description: ""
-category: ""
-tags: []
+category: "pycon"
 ---
 {% include JB/setup %}
 

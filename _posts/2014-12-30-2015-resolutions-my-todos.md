@@ -2,8 +2,7 @@
 layout: post
 title: "2015 Resolutions: My new TODOs"
 description: ""
-category: ""
-tags: []
+category: "new years"
 ---
 {% include JB/setup %}
 

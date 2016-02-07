@@ -2,8 +2,7 @@
 layout: post
 title: "Don Quixote Ballet Review"
 description: ""
-category: ""
-tags: []
+category: "ballet"
 ---
 {% include JB/setup %}
 

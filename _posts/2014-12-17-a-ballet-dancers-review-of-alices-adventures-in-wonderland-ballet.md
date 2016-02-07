@@ -2,8 +2,7 @@
 layout: post
 title: "A Ballet Dancer's Review of Alice's Adventures in Wonderland Ballet"
 description: "A dance review of a live screening of a ballet"
-category: "ballet, art"
-tags: []
+category: "ballet"
 ---
 {% include JB/setup %}
 

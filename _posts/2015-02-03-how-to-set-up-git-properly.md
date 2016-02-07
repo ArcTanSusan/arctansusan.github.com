@@ -2,8 +2,7 @@
 layout: post
 title: "How to Set Up Git Properly"
 description: ""
-category: ""
-tags: []
+category: "git version control"
 ---
 {% include JB/setup %}
 

@@ -2,8 +2,7 @@
 layout: post
 title: "Review of SFBallet's Sensorium"
 description: ""
-category: ""
-tags: []
+category: "ballet"
 ---
 {% include JB/setup %}
 

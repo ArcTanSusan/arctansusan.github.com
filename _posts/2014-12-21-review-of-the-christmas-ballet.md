@@ -2,8 +2,7 @@
 layout: post
 title: "Review of The Christmas Ballet"
 description: ""
-category: ""
-tags: []
+category: "ballet"
 ---
 {% include JB/setup %}
 

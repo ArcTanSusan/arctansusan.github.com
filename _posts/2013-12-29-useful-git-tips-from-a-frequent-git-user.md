@@ -2,8 +2,7 @@
 layout: post
 title: "Useful Git Tips From a Frequent Git User"
 description: ""
-category: ""
-tags: ["git","gitub","workflow","productivity"]
+category: "git"
 ---
 {% include JB/setup %}
 

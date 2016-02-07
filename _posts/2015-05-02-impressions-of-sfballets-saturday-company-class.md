@@ -2,8 +2,7 @@
 layout: post
 title: "Impressions of SFBallet's Saturday company class"
 description: ""
-category: ""
-tags: []
+category: "ballet"
 ---
 {% include JB/setup %}
 
