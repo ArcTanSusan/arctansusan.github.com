@@ -3,13 +3,20 @@ layout: page
 title: A Blog of ArcTanSusan
 ---
 {% include JB/setup %}
-## About This Blog
-This static blog contains technical post-it notes, insightful reviews, and random observations of a software engineer in San Francisco.
 
 ## About Susan Tan
-I live and work in San Francisco. I've lived my first 18 years of life in Brooklyn, NYC. I sometimes blog about books and art here.
+Since Fall 2012, I've lived and worked in San Francisco. I've lived my first 18 years of life in Brooklyn, NYC.
 
-I can be found @ArcTanSusan on Twitter and on IRC. My email is susan.tan.fleckerl@gmail.com.
+## About This Blog
+This static blog contains technical post-it notes and random observations of a software engineer in San Francisco. I blog 
+about books that I've read, ballet, art museums, and software engineering topics here. The blog posts here are in chronological order. None of my posts are organized by topic.
+
+
+## How to Contact Me
+Twitter: @ArcTanSusan
+IRC @ArcTanSusan
+Email: susan.tan.fleckerl@gmail.com.
+
 
 ## Past Blog Posts
 <ul class="posts">
