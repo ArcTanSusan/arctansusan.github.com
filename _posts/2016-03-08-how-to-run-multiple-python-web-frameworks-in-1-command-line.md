@@ -7,9 +7,6 @@ tags: []
 ---
 {% include JB/setup %}
 
-How do I Run Multiple Python Web Frameworks in 1 Command Line?
-==============================================================================
-
 When you want to run a flask app locally, you run `python hello_flask.py` and open the browser to localhost:5000. When you want to run a pyramid app locally, you run `python hello_pyramid.py` and open the browser to localhost:8000. When you want to run a Django app locally, you run `python manage.py runserver` and go to localhost:8080. Each app is on a different port on the localhost domain. 
 
 If you have information on the Flask app that which the Django app needs, it's tricky to get these two web frameworks to talk to each other on different ports via Ajax requests. You'll run into a problem called cross origin resource sharing, which can be fixed on the server side only. For example, requesting https://foo.bar/target from http://foo.bar/source would not work. Requesting http://sub.foo.bar from http://foo.bar also would not work. The most common error you'll see is "Request header field Access-Control-Allow-Origin is not allowed by Access-Control-Allow-Headers." This is a security restriction that prevents requests being made from one origin to another either via different ports or domains or http procotols.
