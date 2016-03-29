@@ -7,37 +7,46 @@ tags: []
 ---
 {% include JB/setup %}
 
+Intro
+--------------
+
+Hi, I'm Susan. I work at Cisco in San Francisco, CA. I used to work at a small cloud computing startup Piston and then they got acquired by Cisco. I know python web apis, web development, and I currently work with the openstack horizon project on the Cisco team.
+
+In 2014, I've worked on an open source Django project called OpenHatch located at openhatch.org, it's a project that helps users find open source projects. I upgraded OpenHatch from 1.3 to 1.4 and then from 1.4 to 1.5. Much of this advice is drawn from experiences on upgrading OpenHatch.org.
+
 
 Why Should I Upgrade To Newer Django Version?
 -----------------------------------------------------------------------------------
-New versions of the Django project are released on a time-cycle of every 8-9 months. Upgrading your current Django project to the next release of the Django project is a necessary and inevitable chore. You know you'll get the newest security and bug fixes, latest features, and get improved re-factored code in that new release. The longer you stay in an earlier version of Django as time marches on, the more you incur technical debt, and the more difficult and time consuming your future upgrades will be. It's easier to go to Django 1.7 when you're already running Django 1.6, and much harder to get there if you're running an earlier version like 1.3. Running an older version of Django is technical debt that can only accumulates as new feature versions are released once every 8 months and you're not taking full advantage of improved features or security fixes.
+New versions of the Django project are released on a time-cycle of every 8 months. Upgrading your current Django project to the next release of the Django project is a necessary and inevitable chore. You know you'll get the newest security and bug fixes, and new improved features in the new release. The longer you stay in an earlier version of Django as time marches on, the more you incur technical debt, and the more difficult and time consuming to complete future upgrades will be. It's easier to go to Django 1.7 when you're already running Django 1.6, and much harder to get there if you're running a much older version like 1.3. Running an older version of Django is technical debt that can only accumulate as new feature versions are released once every 8 months. 
 
 
 Semantic Versioning
 -----------------------------------
-Let's review semantic versioning. The first integer is the major, the second integer is the minor, and the third integer is the patch. The major version A gets incremented when your project adds a backwards-incompatible feature, the minor version B gets incremented when your projects adds a new backwards-compatible feature, the patch version C gets incremented when your projects adds sercutiy updates or feature improvements. Patch releases are 100% backwards-compatible with the previous patch release, so you should always upgrade to the latest patch release.
+Let's review semantic versioning. The first integer is the major, the second integer is the minor, and the third integer is the patch. The major version A gets incremented when your project adds a backwards-incompatible feature, the minor version B gets incremented when your projects adds a new backwards-compatible feature, the patch version C gets incremented when your project adds sercutiy updates or feature improvements. Patch releases are 100% backwards-compatible with the previous patch release, so you should always upgrade to the latest patch release.
 
-The full document at www.semver.org goes into fuller detail on best practices on naming the version of the software you work on.
+The full document at www.semver.org goes into full detail on best practices on naming the version of the software you work on and it's a document that  communicates those rules that people have been using for a while.
 
 Django Doesn't Follow Semantic Versioning
 -----------------------------------------------------------------------------------
-The django community doesn't follow the semantics for the major version number. If the sementics versioning is followed, Django 1.7 would technically be Django 2.0, because it IS backwards-incompatible with all the versions that came before it. Django develops instead opted to follow version 1.9 with 2.0. This effectively means that the major release number is simply an extension of the minor release number. A.B as the major number. Contrary to what the semantic versioning rules say, the Django project's minor numbers may be double digits. Django version 1.4.15 currently exists and is a valid release identifier.
+The django community doesn't follow the semantics versioning. Especially for the major version number. If the semantics versioning is followed, Django 1.7 would technically be Django 2.0, because it IS backwards-incompatible with all the versions that came before it. Django develops instead opted to follow version 1.9 with 2.0. This effectively means that the major release number is simply an extension of the minor release number. A.B as the major number. Contrary to what the semantic versioning rules say, the Django project's minor numbers may be double digits. Django version 1.4.15 currently exists and is a valid release identifier.
 
 
 When is the Right Time to Upgrade?
 -----------------------------------------------------------------------------------
-The best time to upgrade is when your project's Django version is no longer supported. In other words, it has passed the deadline for extended support. For example, Django 1.6 has been end of life for several months and no longer receives security updates as of April 1, 2015. You should always upgrade to the latest point release e.g. 1.8.4 to 1.8.5, to make sure you have the latest bug and security fixes. These point releases backwards compatible.
+The best time to upgrade is when your project's Django version is no longer supported. In other words, it has passed the deadline for extended support. For example, Django 1.6 has been end of life for several months and no longer receives security updates as of April 1, 2015. You should always upgrade to the latest point release e.g. 1.8.4 to 1.8.5, to make sure you have the latest bug and security fixes. These point releases are backwards compatible.
 
-You can't do an upgrade without tests of some kind to confirm that the site still works after the upgrade. Running the test suite shows you which test errors to fix. Helpful deprecation warnings from the new Django version will come up when you run unit tests. If you don’t have a test suite, then now would be a good time to start writing unit tests. Integration or functional tests will take longer to run, while unit tests will give you faster results regarding if a specific feature works as expected. You don't need 100% coverage, but the more unit tests you have, the more confident you will feel about working through the upgrade process.
+You can't do an upgrade without tests of some kind to confirm that the site still works after the upgrade. Running the test suite shows you which test errors to fix. Helpful deprecation warnings from the new Django version will come up when you run unit tests. If you don’t have a test suite, then now would be a good time to start writing unit tests. Integration or functional tests will take longer to run, while unit tests will give you faster results regarding if a specific feature works as expected. You don't need 100% test coverage, but the more unit tests you have, the more confident you will feel about working through the upgrade process.
+
+We can look at the official release schedules to know when is the right time to upgrade.
 
 
 Supported Versions Chart
 -----------------------------------------------------------------------------------
 If your project's Django version is 1.8 or below as shown in the red, the timeline here says it's about time to upgrade that version to at least 1.8 or above. 
 
-When upgrading Django sites, the release notes for the version you're upgrading to and the deprecation timeline become essential reading materials. For sites that go to production with a specific deployment method, a lot of planning may need to take place before the actual upgrade work starts.
+The release notes for the version you're upgrading to and the deprecation timeline become essential reading materials. For sites that go to production with a specific deployment method, a lot of planning may need to take place before the actual upgrade work can begin.
 
-Feature releases or major releases will happen roughly every eight months. Each feature release contains new features and improvements to existing features. The core Django team guarantees supports for two major releases of Django at a time. Certain feature releases will be designated as long-term support (LTS) releases. These releases will get security and data loss fixes applied for a guaranteed period of time, typically three years. 1.8 and 1.9 are the two latest stable releases and continue to have long-term support for another 1-2 years from now.
+Feature releases or major releases will happen roughly every eight months. Each feature release contains new features and improvements to existing features. The core Django team guarantees support for two major releases of Django at a time. Certain feature releases will be designated as long-term support (LTS) releases. These releases will get security and data loss fixes applied for a guaranteed period of time, typically three years. 1.8 and 1.9 are the two latest stable releases and continue to have long-term support for another 1-2 years from now.
 
 
 Future Release Plan
@@ -51,7 +60,7 @@ A lot of folks think that doing an upgrade to a newer version of Django is very 
 
 I did upgrade from 1.6 to 1.7 in one afternoon on a small web project that with a dozen Python package dependencies. That web app worked fine locally, all the tests pass.
 
-In 2014, I've worked on an open source Django project called OpenHatch located at openhatch.org, it's an open source project that helps users find open source projects. I upgraded OpenHatch from 1.3 to 1.4 and then from 1.4 to 1.5.8. The changes covered a large amount of the codebase. Each upgrade to the next minor release involved adding and deleting a lot lines of code (4,000+ lines) across a lot of code in the openhatch code base and 3rd party Django libraries. It took me about 4 weeks to go from a completely broken Django app to a functional app, including days where I was stumped on how to proceed next, and even after I submtted the large pull request on github, I received a lot of code review feedback I got  from other contributors.
+In 2014, I've worked on an open source Django project called OpenHatch located at openhatch.org, it's an open source project that helps users find open source projects. I upgraded OpenHatch from 1.3 to 1.4 and then from 1.4 to 1.5.8. The changes covered a large amount of the codebase. Each upgrade to the next minor release involved adding and deleting a lot lines of code (4,000+ lines) across a lot of code in the openhatch code base and 3rd party Django libraries. It took me about 4 weeks to go from a completely broken Django app to a functional app, including days where I was stumped on how to proceed next, and even after I resolved the test errors, I submtted the large pull request on github, I received a lot of code review feedback I got  from other contributors.
 
 
 What does the end product look like?
@@ -72,6 +81,7 @@ What is the Step Zero?
 -----------------------------------------------------------------------------------
 The upgrading step itself is very easy. Assuming you're in a virtualenv, you pip uninstall your current Django and then you install the next Django version with pip install. The next step is to make the codebase support this new version of Django, which is what 99% of the upgrading work entails.
 
+
 What NOT to do
 -----------------------------------------------------------------------------------
 
@@ -84,6 +94,11 @@ Depreciation warnings are removed after 2 versions. In 1.5, you'll see a warning
 What is Step 1?
 -----------------------------------------------------------------------------------
 After you do this, run the tests. 3 outcomes can happen: your entire test suite fails to start. Some of your tests fail. If your codebase is small and relies on very few Django or Python dependencies, you may be lucky to see that all the tests pass. Then, you'll have to check if the test coverage is good. If you'e that lucky developer with comprehensive automated test suite that all pass, then your work is almost all done. Most likely, you'lll find that not all tests pass.
+
+
+What if all tests pass on first run?
+--------------------------------------------------------
+I've been trying to find an occasion to use this image.
 
 
 What's next if tests fail?
@@ -119,34 +134,46 @@ Then rinse and repeat, testing and re-testing different parts of the whole app t
 
 What are The Challenges?
 -------------------------------------------
+Lots of dependencies may break
+-------------------------------------------------
+Some third party dependencies may not work or may require upgrades, breaking your app. The test error will tell you when you need to upgade the library dependency. In the worst case, some 3rd party Django libraries may not support the version of Django you're upgrading to. Then, you'lll have to patch up that library to make it compatible. You're doing good for the rest of the community if you decide to upstream those changes to the library maintainers, too.
 
-3rd party django libraries
--------------------------------------------
-Some third party dependencies may not work or may require upgrades, breaking your app. In the worst case, some 3rd party Django libraries may not support the version of Django you're upgrading to. Then you'lll have to patch up that library to make it compatible and it's a good thing to upstream those changes to the library maintainers, too.
+The OpenHatch repo has a large number of python and django dependencies, as listed. I ran into an error message about library X, and that'll tell me that I have to update that library. So I did that, and I realized that when you vendor dependencies, I have to add in hundreds of files from the dependency to the OpenHatch codebase when that library needs an upgrade. For projects that don't vendor libraries, updating the requirements.txt and doing a pip install in the virtualenv is sufficient.
+
+Lots of release notes
+----------------------------------
+There are a lot of release notes to read for the version you're upgrading to. I personally would not recommend reading the entire document from start to finish. I would run the unit tests and if one fails, its error message will direct you to a specific part of the release notes to read.
 
 
 Some are simple changes
 ----------------------------------------
-
-Release notes: "The django.core.servers.basehttp.AdminMediaHandler will be removed. In its place use django.contrib.staticfiles.handlers.StaticFilesHandler."
-
+This is an example of a commit I made. The relrease notes state that AdminMediaHandler needs to be removed and replaced with StaticFilesHandler. When I made this change, the test error disappeared. I saw a different test error appear. Generally, when you get a different test error, that's means you're doing something right.
 
 
+Some are simple changes
+----------------------------------------
+Django 1.5 supports execute_from_command_line instead of the execute_manager. This is a straightforward one-time change in the manage.py. This is one of the big reasons why manage.py test or manage.py runserver would not run.
 
 
+Some are simple changes
+----------------------------------------
+This commit shows another syntax change where all mentions of "direct_to_template()" needs to be replaced with the generic template view class in urls.py. Each of these changes are separate commits to indicate one change that fixes this type of test errors.
 
 
+Lots of Repetitions
+--------------------------------------
+Django 1.5 requires that the url referenes in the template be in quotes. This screenshot shows one of those changes on one template. The actual commit affects hundreds of files in the openhatch codebase. I wrote a bash script to automate these string replacements.
 
 
+Takeways
+--------------------------------------
+Doing an upgrade is a big project. Do this for one version at a time at about once every 8 months. Without unit tests to tell you to what extent the project is functional  nd set off helpful deprecation warning, doing a successful upgrade is nearly impossible. Fixing one unit test at a time with a new commit is a good strategy. The release notes will tell you how to fix the test. Going through a checklist of smaller tasks is useful. I've also taken notes of various error messages and how I resolved them; in case I get stuck on a test error, I can check my notes to see what I've tried previously.
 
+A talk does not fully encapsulatae the experience of doing a Django upgrade. To really understand what it's like to go through an upgrade, it's not from a talk, but from real experience.
 
-
-
-Open Space on Saturday morning 10AM
-----------------------------------------------------------------
-
-I am thinking of hosting an open space on Saturday morning and also Sunday morning where folks can go to a table and get help on upgrading their personal Django projects. Anyone who has a Django project they want to upgrade their own projects are invited and welcome to join. I'm looking for mentors who have ever done an upgrade before. I'll be there to help. Would anyone else be interested in attending an open space devoted to people working on upgrading their projects?
-
+Announcement: Django Upgrade Open Space this weekend
+------------------------------------------------------------------------------------------------------------------
+I'm hosting an open space on Saturday morning and also Sunday morning where folks can go to a table and get help on upgrading their personal Django projects. Anyone who has a Django project they want to upgrade their own projects are invited and welcome to join. I'm looking for mentors who have ever done an upgrade before. I'll be there to help. Would anyone else be interested in attending an open space devoted to people working on upgrading their projects?
 
 References
 ------------------------------------------
