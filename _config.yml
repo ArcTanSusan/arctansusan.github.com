@@ -13,7 +13,7 @@ tagline: Site Tagline
 author :
   name : Susan Tan
   email : susan.tan.fleckerl@gmail.com
-  github : onceuponatimeforever
+  github : ArcTanSusan
   twitter : ArcTanSusan
   feedburner : feedname
 
@@ -25,7 +25,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://onceuponatimeforever.github.io
+production_url : http://arctansusan.github.io
 markdown: kramdown
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
