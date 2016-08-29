@@ -4,14 +4,13 @@ title: Speaker Resume
 header: A list of past talks
 group: navigation
 ---
-{% include JB/setup %}
 
 ## What do I like to give talks on?
 I enjoy speaking at technical conferences in different cities. Almost all my talks are related to software engineering as a craft, Python, and web application topics. If you would like me to speak at your next conference, send me an email me at <susan.tan.fleckerl@gmail.com>.
 
 I've been volunteering on the PyCon talks committee since 2015, helping to vote on hundreds of PyCon talk proposals.
 
-## Past Speaking Experience
+## Speaking Experience
 
 - 3/2016 -- **How to Upgrade To the Newest and Shiniest Django**
     - Conference: [DjangoCon Europe 2016](https://2016.djangocon.eu/speakers/) in Budapest, Hungary, [Video](http://pyvideo.org/djangocon-europe-2016/how-to-upgrade-to-the-newest-and-shiniest-django.html)
