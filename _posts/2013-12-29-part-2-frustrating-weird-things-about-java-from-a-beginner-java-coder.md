@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Part 2: Frustrating Weird Things About Java From a Beginner Java Coder"
+title: "Part 2 Frustrating Weird Things About Java From a Beginner Java Coder"
 description: ""
 category: "java"
 ---
